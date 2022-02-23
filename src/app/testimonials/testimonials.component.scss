@@ -1,0 +1,115 @@
+.slid_container{
+   
+    position: relative;
+    padding: 4rem 0;
+    background-image: url("../../assets/images/overlay-bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 50px 0px;
+    // min-height: 90vh;
+    
+}
+.layer_zrq{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,120,255, 0.7);
+    z-index: 35;
+}
+
+
+.carousel-item{
+    height: 100% !important;
+}
+.slid_item{
+    padding: 4rem 0;
+    text-align: center;
+    // position: relative;
+    // z-index: 50;
+    // padding: 8rem 0;
+
+    // background-color: tomato;
+    min-height: 50vh;
+    .carousel-caption{
+        // transform: translateY(80px);
+        position: relative;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50% , 50%);
+    }
+    h2{
+        
+        color:#ffffff ;
+        font-size: 23px;
+    }
+    img{
+        // transform: translateY(-40px);
+        margin: auto auto;
+        text-align: center;
+        // padding: 50px;
+        // background-color: teal;
+        margin-bottom: 8px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+}
+
+.slid_itm p{
+    color:#ffffff ;
+    font-size: 20px;
+}
+
+.comit{
+    font-size: 30px;
+   background-color: #ffffff;
+   color: #0078ff;
+   margin: 0 auto;
+   width: 52px;
+   height: 52px;
+   display: block;
+   border-radius: 50%;
+  margin-bottom: 70px;
+}
+
+.slid_con{
+    position: relative;
+    z-index: 50;
+}
+
+
+
+
+.home-container {
+    min-height: 98vh;
+    overflow: hidden;
+    max-height: 90vh;
+    // background-color: red;
+    position: static;
+    // background-color: rgba(0, 0, 0, 0.9);
+    z-index: 999999999;
+    .black-layer {
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    .slide-container {
+        // width: 90%;
+        width: 100%;
+        min-height: 98vh;
+        overflow: hidden;
+        max-height: 100vh;
+    }
+    .carousel-item {
+        img {
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+$base-color: #083678;
+.about-header{
+    margin: 50px 0px;
+    text-align: center;
+    overflow-x: hidden;
+    span{
+        color: $base-color;
+       
+    }
+    &:hover h2 {
+        // color: red;
+        // animation: header 3s alternate;
+        animation: heads 0.4s ease-in-out;
+        
+    }
+}
+.items-container {
+    overflow: hidden;
+    margin: 50px auto;
+    padding: 50px 0px;
+    .sessions-item {
+        position: relative;
+        padding: 20px 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        margin-top: 15px;
+        height: 250px;
+        overflow: hidden;
+        // transition: all 0.2s ease-in;
+        &:hover {
+            transform: translateY(-10px);
+            transition: all 0.4s ease-in;
+            &::after {
+                content: " ";
+
+                position: absolute;
+                top: -41px;
+                right: -41px;
+                width: 80px;
+                height: 80px;
+                -webkit-border-radius: 40px;
+                -moz-border-radius: 40px;
+                border-radius: 40px;
+                // transition: all 0.4s ease-in;
+                background: #00cba9;
+            }
+        }
+
+        .item-icon-span {
+            padding: 20px;
+            i {
+                padding: 12px;
+                font-size: 25px;
+                // background-color: red;
+                border-radius: 50%;
+                border: solid 1px lightgray;
+            }
+            &:hover i {
+                animation: icon 1s alternate;
+            }
+        }
+
+        .item-headLine {
+            font-size: larger;
+            font-weight: 900;
+        }
+    }
+}
+
+
+@keyframes icon {
+    0% {
+        transform: scale(0.5);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes heads {
+    0% {
+        transform: scale(0.5);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}

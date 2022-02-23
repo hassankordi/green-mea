@@ -1,0 +1,33 @@
+$base-color: #083678;
+.sideBar-container {
+    .d-flex {
+        // align-items: center;
+        justify-content: center;
+        gap: 20px;
+        // overflow: hidden;
+        // border-right: solid #626469 1px;
+
+       
+        span {
+            text-align: center;
+            padding: 0px;
+            overflow: hidden;
+            transition: all 0.1s ease-in;
+
+            i {
+                border: solid #626469 1px;
+                color: #626469;
+                padding: 10px;
+                border-radius: 50%;
+                margin: 15px 0px;
+                font-size: 16px;
+                transition: all 0.1s ease-in;
+                &:hover {
+                    transform: translateY(-5px);
+                    color:$base-color ;
+                    border: solid $base-color 1px;
+                }
+            }
+        }
+    }
+}
