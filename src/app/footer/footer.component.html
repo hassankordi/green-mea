@@ -8,3 +8,50 @@
         <span><a href=""><i class="fa-brands fa-whatsapp"></i></a></span>
     </div>
 </section>
+
+<section>
+    <div class="container">
+        <div class="form-box">
+            <form [formGroup]="myForm" >
+                <div class="row py-4 my-5">
+                    <div class="col-md-10">
+                        <span class="p-float-label">
+                            <!-- ng-dirty => for the red color (invalid) -->
+                            <input formControlName="name" id="float-input-invalid" type="text" pInputText  class=" ">
+                            <label for="float-input-invalid">Username</label>
+                        </span>
+
+                    </div>
+                    <div class="col-md-10">
+                        <span class="p-float-label">
+                            <input formControlName="email" id="float-input-invalid" type="text" pInputText 
+                                class="ng-invalid">
+                            <label for="float-input-invalid">Email</label>
+                        </span>
+                    </div>
+                    <div class="col-md-10">
+                        <span class="p-float-label">
+                            <input formControlName="phone" id="float-input-invalid" type="text" pInputText 
+                                class="ng-invalid ">
+                            <label for="float-input-invalid">Phone</label>
+                        </span>
+
+                    </div>
+                    <div class="col-md-10">
+                        <span class="p-float-label">
+                            <textarea  class="form-control" formControlName="message" id="float-input" rows="5" cols="30" pInputTextarea></textarea>
+                            <label for="float-input">Summary</label>
+                        </span>
+                        
+                    </div>
+                    <div class="col-md-10">
+                        <p-button (click)="sendData()" label="Submit" icon="pi pi-check" iconPos="right"></p-button>
+                    </div>
+                </div>
+            </form>
+
+
+        </div>
+
+    </div>
+</section>

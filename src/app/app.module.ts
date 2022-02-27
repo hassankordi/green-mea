@@ -19,6 +19,15 @@ import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
+import {ButtonModule} from 'primeng/button';
+
+
+import {DialogModule} from 'primeng/dialog';
+import {InputTextModule} from 'primeng/inputtext';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+// import {} from '@angular/from'
+
 
 
 // import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
@@ -45,7 +54,12 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AppRoutingModule,
     CarouselModule,
     BrowserAnimationsModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    ButtonModule,
+    InputTextModule,
+    FormsModule,
+    ReactiveFormsModule,
+    DialogModule
     // AccordionModule,
     
     // NgbModule,
