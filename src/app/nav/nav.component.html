@@ -21,7 +21,7 @@
 
 
 
-    <nav id="light-dark-nav" class="navbar navbar-expand-lg navbar-light w-100  ">
+    <nav id="light-dark-nav" class="navbar navbar-expand-lg navbar-light w-100">
         <div class="container-fluid d-flex p-3">
             <a class="navbar-brand branding-logo ps-5 " href="#"><img src="../../assets/images/logo1.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,15 +44,15 @@
                     </li>
 
                     <!-- drop down => solutions and projects -->
-                    <!-- <li class="nav-item dropdown">
+                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Our Solutions
+                    Our Services
                 </a>
                 <ul class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">The Solutions</a></li>
-                  <li><a class="dropdown-item" href="#">Projects</a></li>
+                  <li><a class="dropdown-item" href="#">Consulting and Training</a></li>
+                  <li><a class="dropdown-item" href="#">Digital Services</a></li>
                 </ul>
-              </li> -->
+              </li>
 
 
                     <li class="nav-item ">
@@ -63,7 +63,7 @@
                         <a id="blog-btn" class="nav-link" href="#">Blog </a>
                     </li>
                     <li class="nav-item">
-                        <a id="contacts-btn" class="nav-link" href="#">Contact Us </a>
+                        <a (click)="scrollToContact()" id="contacts-btn" class="nav-link" href="#">Contact Us </a>
                     </li>
 
 
@@ -166,6 +166,7 @@
 
 <p-dialog header="{{modalHeader}}" [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}"
     [draggable]="false" [resizable]="false">
+    
     <p class="m-0">{{modalContent}}</p>
     <!-- <ng-template pTemplate="footer">
         <p-button icon="pi pi-check" (click)="displayModal=false" label="Ok" styleClass="p-button-text"></p-button>

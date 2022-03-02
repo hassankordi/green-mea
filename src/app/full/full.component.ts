@@ -10,11 +10,9 @@ export class FullComponent implements OnInit {
 
   constructor() { }
 
-
+  
 
   ngOnInit(): void {
-
-  
   }
 
 }

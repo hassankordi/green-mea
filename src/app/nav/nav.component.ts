@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -7,7 +7,7 @@ declare var $: any;
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-
+@Output('scrollToContacts') scroll:EventEmitter<any>
 
   modalHeader: any = "our header"
   modalContent: any = "our content"
@@ -40,18 +40,26 @@ export class NavComponent implements OnInit {
     this.modalContent = "Power systems monitoring and control requires extremely large amount of information – millions of points or more – extracted from multiple sources with enough resolution of time and quality either automatically or manually."
     this.showModalDialog()
   }
-
   openFintech() {
     this.modalHeader = "Fintech and E-payment Intelligence Technology"
     this.modalContent = "As the financial services industry experiences considerable upheaval based on digitalization and new regulations, incumbents and startups apply digital technologies to increase their competitiveness. Our findings indicate that by utilizing intelligent automation—the combination of robotic process automation and artificial intelligence—FinTech firms could improve all the components of their business model, value creation, value delivery, and value capture"
     this.showModalDialog()
   }
-
-
   openOperations() {
     this.modalHeader = "Excellence of operations"
     this.modalContent = "Innovation is the only way to overcome the challenges of tomorrow! To make the transformation into the digital age, operational excellence needs to explore the use of new technologies"
     this.showModalDialog()
+  }
+
+
+// scroll to contacts
+  scrollToContact() {
+    console.log((document.getElementById('sendUs') as HTMLInputElement));
+    
+    (document.getElementById('sendUs') as HTMLInputElement).scrollIntoView({
+      behavior: 'smooth',
+    });
+    this.scroll.emit({"scroll":"hello"});
   }
 
  
